@@ -1,6 +1,6 @@
 FROM rockylinux:9
 
-LABEL Description="MiKTeX build environment, Rocky Linux 9" Vendor="Christian Schenk" Version="23.10.4"
+LABEL Description="MiKTeX build environment, Rocky Linux 9" Vendor="Christian Schenk" Version="23.12.30"
 
 RUN \
     dnf -y update; \
@@ -35,12 +35,12 @@ RUN \
         openssl-devel \
         popt-devel \
         potrace-devel \
-        qt5-linguist \
-        qt5-qtbase-devel \
-        qt5-qtdeclarative-devel \
-        qt5-qtscript-devel \
-        qt5-qttools \
-        qt5-qttools-static \
+        qt6-linguist \
+        qt6-qt5compat-devel \
+        qt6-qtbase-devel \
+        qt6-qtdeclarative-devel \
+        qt6-qttools \
+        qt6-qttools-static \
         rpm-build \
 #        uriparser-devel \
         xz-devel \
